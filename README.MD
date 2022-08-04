@@ -16,3 +16,4 @@ package.json
 # TESTES
 1 - Deve criar um pedido com um cpf valido
 2 - Deve criar um pedido com 3 itens
+3 - Deve criar um pedido com 3 itens com cupom de descconto
