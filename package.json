@@ -1,0 +1,25 @@
+{
+  "name": "clean-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && jest ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/investeusa/clean-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/investeusa/clean-code/issues"
+  },
+  "homepage": "https://github.com/investeusa/clean-code#readme",
+  "dependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "typescript": "^4.7.4"
+  }
+}
