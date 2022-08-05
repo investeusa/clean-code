@@ -84,3 +84,6 @@ Dependency  Inversion
 ##  Tests
 Given/When/Then
 Arrange/Act/Assert
+
+##  Design Patterns
+FACADE: abstrai um subsistema mais complexo oferecenno uma interface mais simples de interação
