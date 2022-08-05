@@ -75,7 +75,7 @@ Self-validation
 Timely
 
 ##  SOLID
-Single responsability
+Single responsability - Separe partes do codigo que mudam por motivos diferentes
 Open/Close
 Liskov Substituition
 Interface Segregation
