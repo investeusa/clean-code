@@ -59,3 +59,28 @@ distância: 1000 (fixo)
 volume: 1
 densidade: 40
 preço: R$400,00 (1000 * 1 * (40/100))
+
+# 3 LEIS DO TDD
+## Voce nao deve escrever uma linha de codigo sem que antes exista um teste que falha
+## Voce nao deve escrever mais do o necessario para evidenciar uma falha
+## Voce nao deve escrever mais codigo doque o suficiente para fazer o teste passar
+
+Verificar quando criar algum codigo
+
+## FIRST Testes
+Fast
+Independent
+Repeatable
+Self-validation
+Timely
+
+##  SOLID
+Single responsability
+Open/Close
+Liskov Substituition
+Interface Segregation
+Dependency  Inversion
+
+##  Tests
+Given/When/Then
+Arrange/Act/Assert
