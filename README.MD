@@ -76,7 +76,8 @@ Timely
 
 ##  SOLID
 Single responsability - Separe partes do codigo que mudam por motivos diferentes
-Open/Close
+Open/Close - Aberto para  extensao e fechado pra modificacao
+
 Liskov Substituition
 Interface Segregation
 Dependency  Inversion
@@ -87,3 +88,14 @@ Arrange/Act/Assert
 
 ##  Design Patterns
 FACADE: abstrai um subsistema mais complexo oferecenno uma interface mais simples de interação
+
+Refactoring
+
+Introducao  de objeto parametro (Dimension)
+
+Invariance
+
+Estado  interno do objeto  que deve  ser  consistente sempre
+
+
+Strategy - chavear o comportamento em  tempo de execucao
