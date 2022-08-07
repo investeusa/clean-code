@@ -13,6 +13,7 @@ export default class Freight {
     }
 
     getTotal() {
+        if (this.total > 0 && this.total < 10) return 10;
         return this.total
     }
 }

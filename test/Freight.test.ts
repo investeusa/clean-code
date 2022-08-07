@@ -8,3 +8,10 @@ test("Deve calcular o frete de um item", function () {
     freight.addItem(item, 2)
     expect(freight.getTotal()).toBe(60) // 3/0.03
 })
+
+test("Deve calcular o frete minimo de um item", function () {
+    const item = new Item(3, "Instumentos musicais", "Guitarra", 30, new Dimension(10, 10, 10), 0.9);
+    const freight = new Freight();
+    freight.addItem(item, 1)
+    expect(freight.getTotal()).toBe(10) // 3/0.03
+})
