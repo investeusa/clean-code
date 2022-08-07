@@ -47,10 +47,3 @@ test("Deve calcular o valor do frete com base nas dimensões (altura, largura e 
     const total = order.getTotal();
     expect(total).toBe(6090 + 30 + 200 + 10 + 10 + 10)
 })
-
-// test("Deve calcular o valor do frete minimo", function () {
-//     const order = new Order("935.411.347-80", new Date("2022-01-01T10:00:00"));
-//     order.addItem(new Item(3, "Instumentos musicais", "Guitarra", 30, new Dimension(10, 10, 10), 0.9), 1)
-//     const total = order.getTotal();
-//     expect(total).toBe(39)
-// })
