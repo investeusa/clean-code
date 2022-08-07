@@ -1,4 +1,4 @@
-import Dimension from "../src/domain/entity/Dimension";
+import Dimension from "../../src/domain/entity/Dimension";
 
 test("Deve criar as dimensoes de um item", function () {
     const dimesion = new Dimension(100, 30, 10);
