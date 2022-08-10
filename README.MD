@@ -1,6 +1,7 @@
 # CONFIG PROJETO
 npm init -y
 npm install typescript jest @types/jest --save
+npm install pg-promise --save
 npx tsc --init //cria o TS config, configurar conforme abaixo
     "incremental": true,
     "outDir": "./dist",
@@ -118,7 +119,6 @@ O código do pedido é formado por AAAAPPPPPPPP onde AAAA representa o ano e o P
 Implementar um mecanismo de persistência desacoplado utilizando banco de dados
 
 Importante
-
 
 Implemente os testes de unidade que faltam para cada uma das entities
 Implemente os DTOs para cada um dos use cases
