@@ -97,8 +97,13 @@ Invariance
 
 Estado  interno do objeto  que deve  ser  consistente sempre
 
-
 Strategy - chavear o comportamento em  tempo de execucao
+
+
+
+
+
+
 
 # PARTE 3
 

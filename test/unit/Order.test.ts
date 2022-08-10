@@ -47,3 +47,11 @@ test("Deve calcular o valor do frete com base nas dimensões (altura, largura e 
     const total = order.getTotal();
     expect(total).toBe(6090 + 30 + 200 + 10 + 10 + 10)
 })
+
+test("Deve criar um pedido e calcular o codigo", function () {
+    const order = new Order("935.411.347-80", new Date("2022-01-01T10:00:00"), 1);
+    order.addItem(new Item(1, "Instumentos musicais", "Guitarra", 1000), 1)
+    order.addItem(new Item(2, "Instumentos musicais", "Amplificador", 5000), 1)
+    order.addItem(new Item(3, "Instumentos musicais", "Guitarra", 30), 3)
+    expect(order.code.value).toBe("202200000001")
+})
