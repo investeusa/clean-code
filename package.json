@@ -19,6 +19,7 @@
   "homepage": "https://github.com/investeusa/clean-code#readme",
   "dependencies": {
     "@types/jest": "^28.1.6",
+    "dotenv": "^16.0.1",
     "jest": "^28.1.3",
     "pg-promise": "^10.11.1",
     "typescript": "^4.7.4"

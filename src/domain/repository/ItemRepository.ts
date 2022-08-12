@@ -1,5 +1,5 @@
 import Item from "../entity/Item";
 
 export default interface IntemRepository {
-    getById(idItem: number): Item | undefined;
+    getById(idItem: number): Promise<Item | undefined>;
 }

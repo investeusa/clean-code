@@ -3,11 +3,11 @@ import IntemRepositoryMemory from "../../src/infra/repository/memory/ItemReposit
 import OrderRepositoryMemory from "../../src/infra/repository/memory/OrderRepositoryMemory";
 import PlaceOrder from "../../src/application/usecase/place-order/PlaceOrder";
 
-test("Deve fazer um pedido", function () {
+test("Deve fazer um pedido", async function () {
     const itemRepository = new IntemRepositoryMemory();
     const orderRepository = new OrderRepositoryMemory();
     const couponRepository = new CouponRepositoryMemory();
-    const placeOrder = new PlaceOrder(itemRepository, orderRepository, couponRepository);
+    const placeOrder = await new PlaceOrder(itemRepository, orderRepository, couponRepository);
     const input = {
         cpf: "935.411.347-80",
         orderItems: [
@@ -18,15 +18,15 @@ test("Deve fazer um pedido", function () {
         coupon: "VALE20",
         issueDate: new Date("2022-03-01T10:00:00")
     };
-    const output = placeOrder.execute(input)
+    const output = await placeOrder.execute(input)
     expect(output.total).toBe(5132)
 })
 
-test("Deve fazer um pedido calculando o codigo", function () {
+test("Deve fazer um pedido calculando o codigo", async function () {
     const itemRepository = new IntemRepositoryMemory();
     const orderRepository = new OrderRepositoryMemory();
     const couponRepository = new CouponRepositoryMemory();
-    const placeOrder = new PlaceOrder(itemRepository, orderRepository, couponRepository);
+    const placeOrder = await new PlaceOrder(itemRepository, orderRepository, couponRepository);
     const input = {
         cpf: "935.411.347-80",
         orderItems: [
@@ -37,7 +37,7 @@ test("Deve fazer um pedido calculando o codigo", function () {
         coupon: "VALE20",
         issueDate: new Date("2022-03-01T10:00:00")
     };
-    placeOrder.execute(input)
-    const output = placeOrder.execute(input)
+    await placeOrder.execute(input)
+    const output = await placeOrder.execute(input)
     expect(output.code).toBe("202200000002")
 })
